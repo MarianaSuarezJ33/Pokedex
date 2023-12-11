@@ -1,0 +1,34 @@
+:root {
+  /* Definición de variables de estilo para reutilización y mantenibilidad */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --back: #fff;
+  /* Color de fondo predeterminado */
+  --card: #eee;
+  /* Color de fondo de las tarjetas */
+  --text: #111;
+  /* Color de texto predeterminado */
+}
+
+* {
+  /* Establecer márgenes y rellenos predeterminados en todos los elementos */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Establecer estilos generales para el cuerpo del documento */
+  background-color: var(--back);
+  /* Usar variable para el color de fondo */
+  color: var(--text);
+  /* Usar variable para el color de texto */
+}
+
+[data-tema='oscuro'] {
+  /* Modificación de variables para el tema oscuro */
+  --back: #1E1E1E;
+  /* Nuevo color de fondo para el tema oscuro */
+  --card: #454A54;
+  /* Nuevo color de fondo de las tarjetas para el tema oscuro */
+  --text: #eee;
+  /* Nuevo color de texto para el tema oscuro */
+}

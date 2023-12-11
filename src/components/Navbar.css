@@ -1,0 +1,65 @@
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #098882;
+  /* Color de fondo */
+  display: flex;
+  justify-content: space-around;
+  /* Distribuye los elementos horizontalmente */
+  align-items: center;
+  /* Alinea los elementos verticalmente */
+  padding: .5rem 0;
+  /* Espaciado interno */
+  box-shadow: 4px 4px 8px #3250da20;
+  /* Sombra suave */
+}
+
+nav>svg {
+  height: 3rem;
+  width: auto;
+  /* Ajusta automáticamente el ancho manteniendo la proporción */
+}
+
+/* Estilos para el interruptor (switch) */
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Espaciado entre elementos hijos */
+}
+
+.switch>svg {
+  height: 1.5rem;
+  width: auto;
+}
+
+.switch>label {
+  background-color: #84c459f8;
+  /* Color de fondo del contenedor del interruptor */
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  /* Hace que el cursor se convierta en un puntero al pasar por encima */
+  display: flex;
+  align-items: center;
+  /* Alinea los elementos verticalmente */
+  padding: 2px;
+  /* Espaciado interno */
+}
+
+.slider {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
+  /* Forma redonda del interruptor */
+  background-color: #ffffff;
+  /* Color del interruptor */
+  transition: 0.2s;
+  /* Efecto de transición suave */
+}
+
+/* Estilos para el cambio de estado del interruptor (cuando está marcado) */
+.check-switch:checked+.slider {
+  transform: translateX(2.5rem);
+  /* Mueve el interruptor hacia la derecha */
+}

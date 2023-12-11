@@ -1,0 +1,54 @@
+/* Estilo para el contenedor principal de pokémon */
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+/* Estilo para la tarjeta individual de pokémon */
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: var(--card);
+  /* Utiliza la variable de color definida en el tema */
+  padding: 5px 0;
+  box-shadow: 4px 4px 4px #21212120;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Efecto de aumento de escala y sombra al pasar el ratón sobre la tarjeta de pokémon */
+.pokemon-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px 0 #21212170;
+}
+
+/* Estilo para la imagen del pokémon dentro de la tarjeta */
+.pokemon-imagen {
+  width: 150px;
+  height: 150px;
+  margin: 5px 0;
+}
+
+/* Estilo para el título de la tarjeta, que muestra el nombre del pokémon */
+.pokemon-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #454A54;
+  /* Color de fondo del título */
+  color: #eee;
+  /* Color del texto del título */
+  font-weight: 600;
+  text-transform: capitalize;
+  /* Transforma el texto a mayúsculas */
+  padding: 4px 8px;
+  border-radius: 10px;
+  width: 70%;
+  /* Ancho del título */
+}
